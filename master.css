@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  border: solid white 2px;
+  width: auto;
+}
+header .btn {
+  background: green;
+}
+header .btn img {
+  filter: invert(100%);
+}
+header .nav__list {
+  display: none;
+}
+header .nav__list--show {
+  display: flex;
+}
+
+/*# sourceMappingURL=master.css.map */
