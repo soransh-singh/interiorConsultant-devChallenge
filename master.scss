@@ -1,6 +1,4 @@
-*{
-  box-sizing: border-box;
-}
+
 
 body{
   margin: 0;
@@ -54,9 +52,10 @@ header{
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem;
-    div{
+    .button__container{
       display: flex;
       justify-content: flex-end;
+      padding-right:2rem;
     }
     ul{
       display: flex;
@@ -89,7 +88,6 @@ section{
 }
 
 .content{
-  padding: 1rem 0;
   h1{
     font-family: 'Lora', serif;
     font-size: 2.25rem;
@@ -115,8 +113,130 @@ section{
   }
 }
 
+
 .hero__card{
-  img{
-    width: 3rem;
+
+  margin: 0 auto;
+  margin-top: -10%;
+  width: 70%;
+  max-width: 360px;
+  filter: opacity(1);
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+
+  .hero__card__intro{
+    display: flex;
+    align-items: center;
+
+    img{
+      width: 3rem;
+      border-radius: 100%;
+      padding-right: 1rem;
+    }
+    p{
+      font-size: 10px;
+      font-weight: 500;
+      span{
+        font-size: 12px;
+      }
+    }
+    h2{
+      font-size: 18px;
+      font-weight: 700;
+    }
   }
+}
+
+
+@media(min-width:800px){
+  .btn{
+    display: none;
+  }
+  .button__container{
+    display: none;
+  }
+
+  section{
+    display: flex;
+    padding: 0 3rem;
+  }
+
+  section>*{
+    width: 100%;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 3rem;
+    .logo__head{
+      padding: 0;
+    }
+    .nav__list{
+      position:inherit;
+      transform: none;
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      ul{
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+      .nav__link{
+        margin: 0;
+        margin-top: .5rem;
+        padding: 0;
+        padding-left: 5rem;
+      }
+    }
+    .content{
+      h1{
+        font-size: 2.5rem;
+      }
+      p{
+        font-size: 1.25rem;
+        line-height: 29px;
+      }
+      a{
+        font-size: 16px;
+      }
+    }
+  }
+
+
+
+@media(min-width:1100px){
+
+
+  .content{
+    h1{
+      font-size: 3rem;
+    }
+    p{
+      font-size: 1.5rem;
+      line-height: 29px;
+    }
+    a{
+      font-size: 18px;
+    }
+  }
+
+  .hero__card{
+    p{
+      font-size: 12px;
+      span{
+        font-size: 14px;
+      }
+    }
+    h2{
+      font-size: 24px;
+    }
+  }
+}
 }
