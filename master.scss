@@ -22,28 +22,35 @@ ul{
 }
 
 header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .logo__head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .logo{
     border: solid white 2px;
     width: auto;
   }
 
   .btn{
-    background: green;
-    //background-color: inherit;
+    background-color: inherit;
     img{
       filter: invert(100%);
     }
   }
 
   .nav__list{
-    display: none;
+    position:fixed;
+    top: 0%;
+    transform: translate(-100%, 0%);
+    background-color: black;
+    z-index: 5;
+    width: 100%;
+    height: max(600px, 100vh);
   }
 
   .nav__list--show{
-    display: flex;
+    transform: none;
   }
 
 }

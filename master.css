@@ -21,7 +21,7 @@ ul {
   padding-left: 0;
 }
 
-header {
+header .logo__head {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,16 +31,22 @@ header .logo {
   width: auto;
 }
 header .btn {
-  background: green;
+  background-color: inherit;
 }
 header .btn img {
   filter: invert(100%);
 }
 header .nav__list {
-  display: none;
+  position: fixed;
+  top: 0%;
+  transform: translate(-100%, 0%);
+  background-color: black;
+  z-index: 5;
+  width: 100%;
+  height: max(600px, 100vh);
 }
 header .nav__list--show {
-  display: flex;
+  transform: none;
 }
 
 /*# sourceMappingURL=master.css.map */
