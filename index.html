@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="images/Devchallenges.png">
-  <link rel="stylesheet" href="master.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/Devchallenges.png">
   <title>DevChallenge | Interior Consultant</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="master.css">
+  <script src="main.js" charset="utf-8"></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,37 +19,43 @@
   </style>
 </head>
 <body>
+  <!-- XXX: font-family: 'Crimson Pro', serif;
+            font-family: 'Lora', serif;
+            font-family: 'Montserrat', sans-serif;
+  -->
   <header>
       <div class="logo__head">
         <p class="logo">This Interior</p>
-        <button type="button" name="button" class="btn">
-          <img src="image/icon-hamburger.svg" alt="hamburger">
+        <button type="button" name="button" class="btn btn__open" aria-label="open">
+          <img src="image/menu_white_24dp.svg" alt="hamburger">
         </button>
       </div>
     <nav class="nav__list">
-      <button type="button" name="button" class="btn">
-        <img src="image/icon-hamburger.svg" alt="hamburger">
-      </button>
-      <ul >
-        <li>Home</li>
-        <li>Collection</li>
-        <li>About</li>
-        <li>Contact</li>
+      <div>
+        <button type="button" name="button" class="btn btn__close" aria-label="close">
+          <img src="image/close_white_24dp.svg" alt="close">
+        </button>
+      </div>
+      <ul>
+        <li class="nav__link">Home</li>
+        <li class="nav__link">Collection</li>
+        <li class="nav__link">About</li>
+        <li class="nav__link">Contact</li>
       </ul>
     </nav>
   </header>
   <section>
-    <div class="">
+    <div class="content">
       <h1>Modern interior</h1>
-      <p>A full-Service residental & commercial interior design and staging interior design and
+      <p>A full-Service residential & commercial interior design and staging interior design and
       staging company offering professional organizing & eco-service.</p>
       <a href="#">Read more →</a>
     </div>
     <div class="">
       <div class="image">
-        <img src="image/photo1.png" alt="">
+        <img src="image/photo1.png" alt="interior">
       </div>
-      <div class="">
+      <div class="hero__card">
         <img src="image/photo2.png" alt="">
         <p>Aliza Webber
         interior designer</p>
